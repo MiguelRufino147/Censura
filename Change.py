@@ -23,7 +23,7 @@ def localizar(x):
             return x
 
 def retornar(x):
-    if x in palavras:
+    if x in palavras:                                #Retorna palavras censuradas sem o *
         return x
     else:
         return ''
@@ -36,7 +36,7 @@ l2=''
 for words in email:
     l+=localizar(words)+' '
     l2+=retornar(words)+ ' '
-print('Texto substituido:')
+print('Texto substituido:')                                   #Pega as palavras e joga nas funções
 print('-' * 30)
 print(l)
 print('-' * 30)
